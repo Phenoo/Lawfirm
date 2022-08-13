@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -66,15 +70,6 @@ nav header .nav-bar .menu-btn {
   background-color: #00ff00;
   border-radius: 5px;
   display: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 nav header .nav-bar .menu-btn div {
@@ -149,9 +144,12 @@ nav header .nav-bar ul a:hover {
 }
 
 .logo {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo h4 {
@@ -162,7 +160,6 @@ nav header .nav-bar ul a:hover {
   font-size: 1.65rem;
   margin-right: 5px;
   color: #00ff00;
-  padding-bottom: 0.2rem;
   border-bottom: 3px solid #00ff00;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -420,7 +417,7 @@ nav header .nav-bar ul a:hover {
 }
 
 .offers .offers-cont .box p {
-  font-size: 12px;
+  font-size: 0.7rem;
   width: 90%;
 }
 
@@ -788,6 +785,7 @@ nav header .nav-bar ul a:hover {
   text-transform: uppercase;
   font-family: 'Abel', serif;
   font-size: 1.25rem;
+  border-radius: 5px;
 }
 
 .request {
@@ -842,7 +840,7 @@ nav header .nav-bar ul a:hover {
 }
 
 .request form .form-input {
-  width: 100%;
+  width: 95%;
   display: block;
 }
 
@@ -933,7 +931,7 @@ nav header .nav-bar ul a:hover {
 }
 
 .foot-container p {
-  max-width: 60%;
+  max-width: 70%;
   opacity: 0.8;
   font-size: 0.9rem;
 }
@@ -1058,6 +1056,9 @@ nav header .nav-bar ul a:hover {
   .statue {
     display: none;
   }
+  .logo svg {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 50em) {
@@ -1093,7 +1094,7 @@ nav header .nav-bar ul a:hover {
     top: 0;
     bottom: 0;
     width: 100vw;
-    padding: 2rem;
+    padding: 0.85rem 1.5rem;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     z-index: 10;
@@ -1180,6 +1181,9 @@ nav header .nav-bar ul a:hover {
   .experience {
     width: 95%;
   }
+  .experience p {
+    width: 100%;
+  }
   .item {
     margin-top: 1.5rem;
   }
@@ -1204,6 +1208,9 @@ nav header .nav-bar ul a:hover {
   .offers .offers-cont {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .offers .offers-cont .box p {
+    width: 100%;
   }
   .price {
     width: 90%;
@@ -1275,6 +1282,52 @@ nav header .nav-bar ul a:hover {
   nav header .show .social-links {
     width: 95%;
     margin: 0 auto;
+  }
+  .logo svg {
+    font-size: 0.9rem;
+  }
+  .logo h4 {
+    font-size: 1.25rem;
+  }
+  .home .home-text h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .home .home-text p {
+    font-size: 0.7rem;
+  }
+  .experience {
+    margin-top: 5rem;
+  }
+  .experience .headline {
+    font-size: 1.5rem;
+  }
+  .experience p {
+    font-size: 0.6rem;
+    width: 100%;
+  }
+  .experience .stats h6 {
+    font-size: 0.5rem;
+  }
+  .experience .offers .offers-cont .box p {
+    font-size: 0.65rem;
+  }
+  .price .price-tab-container .price-tab p {
+    font-size: 0.5rem;
+  }
+  .review .review-container .review-text p {
+    font-size: 0.85rem;
+  }
+  .trust p {
+    font-size: 0.7rem;
+  }
+  .trust .companies-container .company {
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+  }
+  .foot-container p {
+    max-width: 100%;
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=App.css.map */

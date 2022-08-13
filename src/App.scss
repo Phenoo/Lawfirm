@@ -1,5 +1,4 @@
-// @import 'animate.css';
-// @import '~loaders.css/src/animations/pacman.scss';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Livvic&family=Poppins&display=swap');
 $rem1: 1rem;
 $rem2: 2rem;
 $rem3: 3rem;
@@ -11,6 +10,10 @@ $josefin: 'Josefin Sans';
 * {
     margin: 0;
     padding: 0;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 body {
@@ -68,9 +71,6 @@ nav {
                 background-color: $main-green;
                 border-radius: 5px;
                 display: none;
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 div {
                     width: 2rem;
                     height: 2px;
@@ -125,7 +125,8 @@ nav {
 }
 
 .logo {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
     h4 {
         font-size: 1.5rem;
     }
@@ -133,7 +134,6 @@ nav {
         font-size: 1.65rem;
         margin-right: 5px;
         color: $main-green;
-        padding-bottom: 0.2rem;
         border-bottom: 3px solid $main-green;
         transform: rotateY(180deg);
     }
@@ -315,7 +315,7 @@ nav {
                 margin: 10px 0;
             }
             p {
-                font-size: 12px;
+                font-size: 0.7rem;
                 width: 90%;
             }
             .main-btn {
@@ -560,6 +560,7 @@ nav {
             text-transform: uppercase;
             font-family: 'Abel', serif;
             font-size: 1.25rem;
+            border-radius: 5px;
         }
     }
 }
@@ -592,7 +593,7 @@ nav {
             margin-left: calc(8rem - 10vw);
         }
         .form-input {
-            width: 100%;
+            width: 95%;
             display: block;
             label {
                 font-size: 1.3rem;
@@ -658,7 +659,7 @@ nav {
         }
     }
     p {
-        max-width: 60%;
+        max-width: 70%;
         opacity: 0.8;
         font-size: 0.9rem;
     }
@@ -749,6 +750,11 @@ nav {
     .statue {
         display: none;
     }
+    .logo {
+        svg {
+            font-size: 1.1rem;
+        }
+    }
 }
 
 @media(max-width: 50em) {
@@ -780,7 +786,7 @@ nav {
                 top: 0;
                 bottom: 0;
                 width: 100vw;
-                padding: 2rem;
+                padding: 0.85rem 1.5rem;
                 transform: translateY(0%);
                 z-index: 10;
                 touch-action: none;
@@ -849,6 +855,9 @@ nav {
     }
     .experience {
         width: 95%;
+        p {
+            width: 100%;
+        }
     }
     .item {
         margin-top: 1.5rem;
@@ -879,6 +888,11 @@ nav {
     .offers {
         .offers-cont {
             grid-template-columns: repeat(2, 1fr);
+            .box {
+                p {
+                    width: 100%;
+                }
+            }
         }
     }
     .price {
@@ -968,6 +982,84 @@ nav {
                     margin: 0 auto;
                 }
             }
+        }
+    }
+    .logo {
+        svg {
+            font-size: 0.9rem;
+        }
+        h4 {
+            font-size: 1.25rem;
+        }
+    }
+    .home {
+        .home-text {
+            h1 {
+                font-size: 3rem;
+                line-height: 3.5rem;
+            }
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+    .experience {
+        margin-top: 5rem;
+        .headline {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 0.6rem;
+            width: 100%;
+        }
+        .stats {
+            h6 {
+                font-size: 0.5rem;
+            }
+        }
+        .offers {
+            .offers-cont {
+                .box {
+                    p {
+                        font-size: 0.65rem;
+                    }
+                }
+            }
+        }
+    }
+    .price {
+        .price-tab-container {
+            .price-tab {
+                p {
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }
+    .review {
+        .review-container {
+            .review-text {
+                p {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+    .trust {
+        p {
+            font-size: 0.7rem;
+        }
+        .companies-container {
+            .company {
+                padding: 1rem 0.5rem;
+                font-size: 1rem;
+            }
+        }
+    }
+    .foot-container {
+        p {
+            max-width: 100%;
+            font-size: 0.8rem;
         }
     }
 }

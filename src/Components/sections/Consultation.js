@@ -8,7 +8,7 @@ const Consultation = () => {
       <img src={Shelf} alt="shelf" />
       <div className="overlay">
         <h4 className='tophead'>
-          we assure you that you will win no wi. no fee
+          we assure you that you win your case. no fees
         </h4>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident voluptas, error nesciunt nobis aut ratione</p>
         <Button title='Free Consultation' />
