@@ -67,30 +67,12 @@ nav {
         text-transform: uppercase;
         .nav-bar {
             .menu-btn {
-                padding: 1rem;
+                padding: 0.5rem 0.9rem;
                 background-color: $main-green;
-                border-radius: 5px;
+                border-radius: 2px;
                 display: none;
-                div {
-                    width: 2rem;
-                    height: 2px;
-                    background: #000;
-                    cursor: pointer;
-                    transition: all 0.3s ease;
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    &::after {
-                        content: ' ';
-                        width: 2rem;
-                        height: 2px;
-                        background: #000;
-                        position: absolute;
-                        transition: all 0.4s ease;
-                    }
-                    &::after {
-                        top: 10px;
-                    }
+                svg {
+                    font-size: 1.1rem;
                 }
             }
             .social-links {
@@ -770,7 +752,7 @@ nav {
                 .menu-btn {
                     display: flex;
                     z-index: 100;
-                    transition: 00.2s ease;
+                    transition: 0.2s ease;
                 }
                 ul {
                     display: none;
@@ -790,16 +772,11 @@ nav {
                 transform: translateY(0%);
                 z-index: 10;
                 touch-action: none;
+                transition: all 0.2s ease;
                 .menu-btn {
                     position: relative;
-                    left: 75%;
+                    left: 80%;
                     top: 0;
-                    div {
-                        transform: rotate(220deg);
-                        &::after {
-                            transform: rotate(90deg);
-                        }
-                    }
                 }
                 .nav-links {
                     flex-direction: column;

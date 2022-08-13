@@ -1,4 +1,5 @@
 import {faFacebook, faInstagram, faTwitter, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import { useState } from 'react'
@@ -24,7 +25,9 @@ const Navigation = () => {
         
         <div className={`nav-bar ${isActive ? 'show' : ''}`}>
           <button className='menu-btn' onClick={() => {setActive(!isActive)}}>
-            <div></div>
+            {
+              isActive ? <FontAwesomeIcon icon={faXmark}/> : <FontAwesomeIcon icon={faBars} />
+            }
           </button>
           <ul className='nav-links'>
             <li onClick={() => scrollTo('experts')}>
