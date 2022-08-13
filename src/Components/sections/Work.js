@@ -4,7 +4,7 @@ import Negotiate from '../../subassets/negotiate.jpeg'
 import Button from './Button'
 const Work = () => {
     return ( 
-        <section className = 'work'>
+        <section className = 'work' id='work'>
             <div className = "item">
                 <div className = "item-img" >
                     <img src = { Advise } alt = "lawyer" />

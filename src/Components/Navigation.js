@@ -8,8 +8,15 @@ import Logo from './sections/Logo'
 
 const Navigation = () => {
   const [isActive, setActive] = useState(false);
-
-
+  const scrollTo = (id) => {
+    let element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    })
+    setActive(!isActive)
+  }
   return (
     <nav>
       <header>
@@ -20,20 +27,20 @@ const Navigation = () => {
             <div></div>
           </button>
           <ul className='nav-links'>
-            <li>
+            <li onClick={() => scrollTo('experts')}>
               <a href="/">Home</a>
             </li>
-            <li>
+            <li onClick={() => scrollTo('work')}>
               <a href="#about">About us</a>
             </li>
-            <li>
+            <li onClick={() => scrollTo('attorney')}>
               <a href="#team">Our team</a>
             </li>
-            <li>
+            <li onClick={() => scrollTo('offers')}>
               <a href="#experience">Fractos artas</a>
             </li>
-            <li>
-              <a href="#contact">Contact</a>
+            <li onClick={() => scrollTo('request')}>
+              <a href="#contact">Request</a>
             </li>
           </ul>
           <ul className="social-links">
