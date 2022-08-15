@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Livvic&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Livvic&family=Abel&family=Poppins&display=swap');
 $rem1: 1rem;
 $rem2: 2rem;
 $rem3: 3rem;
@@ -17,8 +17,8 @@ html {
 }
 
 body {
-    background-color: #000;
-    color: #fff;
+    background-color: #fcfcfc;
+    color: #121212;
     font-family: 'Poppins';
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -38,7 +38,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #121211;
     cursor: pointer;
 }
 
@@ -46,6 +46,7 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+    font-family: 'Poppins';
 }
 
 input {
@@ -171,8 +172,8 @@ nav {
 .main-btn {
     background-color: $main-green;
     color: #000;
-    font-size: $rem1;
-    padding: 0.75rem 1rem;
+    font-size: 0.7rem;
+    padding: 0.5rem 0.7rem;
     font-weight: 600;
     text-transform: capitalize;
     display: flex;
@@ -185,7 +186,6 @@ nav {
     &:hover {
         background-color: #000;
         color: $main-green;
-        border: 2px solid $main-green;
     }
 }
 
@@ -324,6 +324,9 @@ nav {
     padding: 2rem;
     flex-direction: column;
     background-color: #2b2b2b;
+    .tophead {
+        color: #fff;
+    }
     .attorney-cont {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -389,6 +392,7 @@ nav {
         -webkit-backdrop-filter: blur(7.5px);
         border: 1px solid rgba(255, 255, 255, 0.3);
         padding: 1rem;
+        color: #fff;
         .tophead {
             font-size: 1.5rem;
             margin-bottom: 1rem;
@@ -436,6 +440,9 @@ nav {
                 color: rgba(255, 255, 255, 0.7);
                 width: 100%;
                 font-size: 10px;
+            }
+            h6 {
+                color: #fff;
             }
             .item-non {
                 h6 {
@@ -543,6 +550,7 @@ nav {
             font-family: 'Abel', serif;
             font-size: 1.25rem;
             border-radius: 5px;
+            color: #fcfcfc;
         }
     }
 }
@@ -578,16 +586,16 @@ nav {
             width: 95%;
             display: block;
             label {
-                font-size: 1.3rem;
+                font-size: 1.1rem;
                 text-transform: capitalize;
             }
             input {
                 width: 100%;
-                background: rgba(255, 255, 255, 0.1);
+                background: rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(5px);
                 color: #fff;
-                font-size: 1.3rem;
-                padding: 1rem 0.5rem;
+                font-size: 1.1rem;
+                padding: 0.8rem 0.5rem;
                 text-transform: capitalize;
                 border-radius: 5px;
                 margin-top: 0.7rem;
@@ -601,13 +609,14 @@ nav {
             textarea {
                 display: block;
                 width: 100%;
-                background: rgba(255, 255, 255, 0.1);
+                background: rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(5px);
                 color: #fff;
                 margin-top: 0.7rem;
                 border-radius: 5px;
                 font-size: 1.3rem;
                 padding: 1rem 0.4rem;
+                border: none;
             }
         }
         button {
@@ -625,12 +634,17 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     place-content: center;
+    ul {
+        margin-top: 0.6rem;
+    }
     h4 {
         font-size: 1.3rem;
         text-transform: uppercase;
-        margin-bottom: 1rem;
     }
     .foot {
+        h4 {
+            margin-bottom: 0;
+        }
         li {
             display: inline-block;
             cursor: pointer;
@@ -644,6 +658,7 @@ nav {
         max-width: 70%;
         opacity: 0.8;
         font-size: 0.9rem;
+        margin-top: 0.6rem;
     }
     .foot2,
     .foot3 {
@@ -662,14 +677,14 @@ nav {
 #email-foot {
     background: none;
     padding: 1rem;
-    border: .5px solid #fff;
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border: .5px solid #121211;
+    border-right: 2px solid #121212;
+    border-bottom: 2px solid #121212;
     margin: 1rem 0;
-    color: #fff;
+    color: #121212;
     font-size: 1rem;
     &::placeholder {
-        color: #fff;
+        color: #121212;
         font-size: 1rem;
         font-weight: 600;
     }
@@ -927,17 +942,6 @@ nav {
 }
 
 @media (max-width: 31.25em) {
-    nav {
-        header {
-            .show {
-                .nav-links,
-                .social-links {
-                    width: 90%;
-                    margin: 0 auto;
-                }
-            }
-        }
-    }
     .offers {
         .offers-cont {
             display: grid;
@@ -946,6 +950,9 @@ nav {
     }
     .foot-container {
         grid-template-columns: 100%;
+        h4 {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -966,7 +973,7 @@ nav {
             font-size: 0.9rem;
         }
         h4 {
-            font-size: 1.25rem;
+            font-size: 1rem;
         }
     }
     .home {
@@ -1004,6 +1011,11 @@ nav {
             }
         }
     }
+    .main-btn {
+        font-size: 0.5rem;
+        padding: 0.3rem 0.5rem;
+        border-radius: 3px;
+    }
     .price {
         .price-tab-container {
             .price-tab {
@@ -1036,7 +1048,40 @@ nav {
     .foot-container {
         p {
             max-width: 100%;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
+        }
+        .foot,
+        .foot2,
+        .foot3 {
+            li {
+                font-size: 0.7rem;
+            }
+        }
+    }
+    #email-foot {
+        background: none;
+        padding: 0.7rem;
+        margin: 1rem 0;
+        color: #121212;
+        font-size: 0.7rem;
+        font-family: "Poppins";
+        &::placeholder {
+            color: #121212;
+            font-size: 0.7rem;
+            font-weight: 600;
+            font-family: "Poppins";
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    nav {
+        header {
+            .nav-bar {
+                .menu-btn {
+                    margin-right: 0.5rem;
+                }
+            }
         }
     }
 }
